@@ -6,39 +6,42 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+    <script src="main.js"> </script>
 </head>
 <body>
     <header class="header">
-        <div class="header_backroud"> 
-            
+        <div  class="header_backroud" > 
                 <img class="header_logo" src="./assets/1.png" alt="">
-           
+                   <div class="header_suppot">
+                  
+            <input class="header_input"  placeholder=" Bạn đang tìm kiếm dịch vụ gì hôm nay" value="">
+            <button class="header_button" style=" "><i class="fa-solid fa-magnifying-glass"></i> </button>
 
-            <div class="header_suppot">
-
-            <button class="header_button" style=" "> <i class="fa-solid fa-magnifying-glass"></i> </button>
-              
-            <input class="header_input"   type=" ">
-           
         </div>
 
         <div class="header_item-Total">
             <div class="header_item">
-                <i class="fa-regular fa-bell"></i>
+                <!--  Chuong -->
+
+
+                <i onclick="bellClick()" id="bellIcon" class="fa-regular fa-bell"></i>
             </div>
             <div class="header_item">
+                <!-- Chat -->
                 <i class="fa-regular fa-message"></i>
             </div>
             <div class="header_item">
+                <!-- User -->
                 <i class="fa-regular fa-user"></i>
             </div>
         </div>
-
-
-
-
+    
         </div>
     </header>
+    <div id="bell" class="header_item_chuong "> 
+        
+<p> qq </p>
+    </div>
 
     <div class="container">
 
@@ -46,5 +49,7 @@
     <footer class="footer">
 
     </footer>
+
+
 </body>
 </html>  
